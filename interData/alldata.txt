@@ -1,0 +1,84 @@
+Date:2021-05-12 13:42;49
+Packet (Length: 63)
+Layer ETH:
+	Destination: 58:ef:68:a7:75:2c
+	Address: 58:ef:68:a7:75:2c
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Source: 58:69:6c:33:fb:50
+	.... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
+	.... ...0 .... .... .... .... = IG bit: Individual address (unicast)
+	Type: IPv4 (0x0800)
+	Address: 58:69:6c:33:fb:50
+Layer IP:
+	0100 .... = Version: 4
+	.... 0101 = Header Length: 20 bytes (5)
+	Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+	0000 00.. = Differentiated Services Codepoint: Default (0)
+	.... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)
+	Total Length: 49
+	Identification: 0x2a07 (10759)
+	Flags: 0x40, Don't fragment
+	0... .... = Reserved bit: Not set
+	.1.. .... = Don't fragment: Set
+	..0. .... = More fragments: Not set
+	Fragment Offset: 0
+	Time to Live: 46
+	Protocol: TCP (6)
+	Header Checksum: 0xbcd0 [validation disabled]
+	Header checksum status: Unverified
+	Source Address: 201.69.176.191
+	Destination Address: 218.255.16.235
+Layer TCP:
+	Source Port: 33312
+	Destination Port: 23
+	Stream index: 19035
+	TCP Segment Len: 9
+	Sequence Number: 4    (relative sequence number)
+	Sequence Number (raw): 3561473119
+	Next Sequence Number: 14    (relative sequence number)
+	Acknowledgment Number: 14    (relative ack number)
+	Acknowledgment number (raw): 1182269404
+	0101 .... = Header Length: 20 bytes (5)
+	Flags: 0x019 (FIN, PSH, ACK)
+	000. .... .... = Reserved: Not set
+	...0 .... .... = Nonce: Not set
+	.... 0... .... = Congestion Window Reduced (CWR): Not set
+	.... .0.. .... = ECN-Echo: Not set
+	.... ..0. .... = Urgent: Not set
+	.... ...1 .... = Acknowledgment: Set
+	.... .... 1... = Push: Set
+	.... .... .0.. = Reset: Not set
+	.... .... ..0. = Syn: Not set
+	.... .... ...1 = Fin: Set
+	Expert Info (Chat/Sequence): Connection finish (FIN)
+	Connection finish (FIN)
+	Severity level: Chat
+	Group: Sequence
+	TCP Flags: ·······AP··F
+	Window: 7300
+	Calculated window size: 14600
+	Window size scaling factor: 2
+	Checksum: 0xab1e [unverified]
+	Checksum Status: Unverified
+	Urgent Pointer: 0
+	SEQ/ACK analysis
+	This is an ACK to the segment in frame: 1251086
+	The RTT to ACK the segment was: 0.368268045 seconds
+	iRTT: 0.365985573 seconds
+	Bytes in flight: 9
+	Bytes sent since last PSH flag: 9
+	Timestamps
+	Time since first frame in this TCP stream: 0.734931750 seconds
+	Time since previous frame in this TCP stream: 0.001832075 seconds
+	TCP payload (9 bytes)
+Layer TELNET:
+	Won't Negotiate About Window Size
+	Command: Won't (252)
+	Subcommand: Negotiate About Window Size
+	Don't Echo
+	Don't Suppress Go Ahead
+	Command: Don't (254)
+	Command: Don't (254)
+	Subcommand: Echo
+	Subcommand: Suppress Go Ahead

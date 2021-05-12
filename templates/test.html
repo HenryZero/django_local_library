@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Captured information</title>
+  </head>
+    <div id="txt"></div>
+        <style>
+           table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                }
+                td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+                }
+                tr:nth-child(even) {
+                  background-color: #dddddd;
+                }
+                tr:hover {background-color:gold;}
+                </style>
+  <body>
+    <table>
+          <tr>
+              <th>time</th><th>port</th><th>username</th><th>password</th><th>website</th>
+          </tr>
+  
+        {% for aclist in accountdb_list %}
+      <tr>
+        <td>
+        {{ aclist.time }}</td>
+        <td> {{ aclist.port }}</td>
+        <td>{{ aclist.username }}</td>
+        <td>{{ aclist.password }}</td>
+        <td>{{ aclist.website }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    </body>
+  </html>
