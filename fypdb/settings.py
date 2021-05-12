@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'we==0d^^do$fyr__c*s!pa$(7h5_o&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'FAlse'
 
-ALLOWED_HOSTS = ['218.255.16.235', '127.0.0.1', '0.0.0.0:8000', '172.18.39.23']
+ALLOWED_HOSTS = ['218.255.16.235', '127.0.0.1', '0.0.0.0:8000', '172.18.39.23', 'secure-sea-46842.herokuapp.com']
 
 # Application definition
 
