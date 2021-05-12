@@ -1,10 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="icon" href= "https://www.instituteofhospitality.org/wp-content/uploads/2018/06/IVE_logo.jpg" type= "image/icon type">
     <meta charset="utf-8">
     <title>Captured information</title>
   </head>
-    <div id="txt"></div>
+	<script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
         <style>
            table {
                 font-family: arial, sans-serif;
@@ -21,7 +39,15 @@
                 }
                 tr:hover {background-color:gold;}
                 </style>
-  <body>
+  <body onload="startTime()">
+<p id="demo"></p>
+
+<script>
+var d = new Date();
+var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+document.getElementById("demo").innerHTML = days[d.getDay()];
+</script>
+    <div id="txt"></div>
     <table>
           <tr>
               <th>time</th><th>port</th><th>username</th><th>password</th><th>website</th>
